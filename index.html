@@ -3,26 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
       <header>
         <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Tuesday 14:09, Scattered clouds
+        <div class="weather-data">
+          <h1 class="weather-city">Paris</h1>
+          <p class="weather-details">
+            <span id="day-and-time"> Tuesday 14:09,</span
+            ><span id="weather-description"> Scattered clouds</span>
             <br />
-            Humidity: 66%, Wind: 3.13km/h
+            Humidity: <strong id="humidity">66%,</strong> Wind:
+            <strong id="wind-speed">3.13km/h</strong>
           </p>
         </div>
-        <div>⛅ 12℃</div>
+        <div class="weather-temperature-container">
+          <span id="icon">⛅ </span><span id="temperature">12</span
+          ><span id="weather-unit"> ℃</span>
+        </div>
       </main>
       <footer>
         Coded by

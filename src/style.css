@@ -51,8 +51,8 @@ a {
 }
 .weather-city {
   margin: 0;
-  font-size: 38px;
-  line-height: 48px;
+  font-size: 40px;
+  line-height: 50px;
 }
 .weather-details {
   font-size: 16px;
@@ -63,20 +63,22 @@ a {
 .weather-details strong {
   color: #f65282;
 }
-.weather-temperature-container {
-  display: flex;
+
+#icon {
+  font-size: 50px;
+  display: inline;
+  position: relative;
+  top: -25px;
 }
-.icon {
-  width: 88px;
-  height: 88px;
-}
-.temperature {
+#temperature {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
 }
 
-.weather-unit {
+#weather-unit {
   margin-top: 6px;
   font-size: 28px;
+  position: relative;
+  top: -40px;
 }

@@ -15,19 +15,20 @@
   <body>
     <div class="container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-input-form"
           />
           <input type="submit" value="search" class="search-form-submit" />
         </form>
       </header>
       <main>
         <div class="weather-data">
-          <h1 class="weather-city">Paris</h1>
+          <h1 class="weather-city" id="city">Paris</h1>
           <div class="weather-temperature-container">
             <span id="icon">⛅ </span><span id="temperature">12</span
             ><span id="weather-unit"> ℃</span>

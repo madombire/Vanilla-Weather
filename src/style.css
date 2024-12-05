@@ -64,11 +64,9 @@ a {
   color: #f65282;
 }
 
-#icon {
-  font-size: 50px;
-  display: inline;
-  position: relative;
-  top: -25px;
+.weather-app-icon {
+  width: 80px;
+  height: 80px;
 }
 #temperature {
   font-size: 88px;
